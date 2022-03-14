@@ -12,9 +12,9 @@
   padding: 0px;
 }
 
-body {
-  position: relative;
-
+html, body {
+  min-height: 100vh;
+  background-color: ;
 }
 
 header {
@@ -27,7 +27,7 @@ width: 100%
 header > h1 {
   font-family: var(--font-destaque);
   font-size: 10vh;
-  padding-top: 3.125rem;
+  padding-top: 50px;
   font-variant: small-caps;  
 }
 
@@ -36,51 +36,53 @@ header > p {
   padding-bottom: 50px;
 }
 
-header a {
+a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  line-height: 2em;
 }
 
-main {
-  padding-left: 1.875rem;
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-left: 30px; 
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   font-family: var(--font-padrao);  
 }
 
-main > p {
-
-}
 
 section.normal {
-  padding: 3.812rem 0rem;
+  
 }
 
 section.imagem {
-  padding-bottom: 32px;
+  color: white;
+  background-color: rgb(52, 52, 52);  
 }
 
-section.imagem #img001{
+section.imagem > p {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+
+section.imagem#img001 {
   background-image: url('imagens/background001.jpg');
-  background-size: auto;
+  background-size: 90vh;
+  background-repeat: no-repeat;
 }
 
-#containerflor {
-
-}
-
-#containerlivro {
-
-}
 
 footer {
   background-color: black;
   color: white;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
 }
 
-footer a {
-  text-decoration: none;
-  color: white;
-}
 
 
