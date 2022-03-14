@@ -5,6 +5,7 @@
 :root {
   --font-destaque: 'Passion One', Impact, sans-serif;
   --font-padrao: 'Sriracha', cursive;
+  --font-rodape: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -14,25 +15,27 @@
 
 html, body {
   min-height: 100vh;
-  background-color: ;
+  background-color: gray;
+
 }
 
 header {
-background-color: black;
-text-align: center;
-color: white;
-width: 100%
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 100%
 }
 
 header > h1 {
   font-family: var(--font-destaque);
   font-size: 10vh;
   padding-top: 50px;
-  font-variant: small-caps;  
+  font-variant: small-caps; 
+  font-size: 10vw; 
 }
 
 header > p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-rodape);
   padding-bottom: 50px;
 }
 
@@ -51,28 +54,42 @@ section {
   padding-left: 30px; 
   padding-top: 10vh;
   padding-bottom: 10vh;
-  font-family: var(--font-padrao);  
+  font-family: var(--font-padrao); 
+  font-size: 3.5vw; 
 }
 
 
 section.normal {
-  
+  background-color: white;
+  color: black;
 }
 
 section.imagem {
   color: white;
-  background-color: rgb(52, 52, 52);  
+  background-color: rgb(52, 52, 52);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.376);  
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section.imagem > p {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 5px;
+  text-shadow: 1px 1px 0px black;
 }
 
-section.imagem#img001 {
+section#img001 {
   background-image: url('imagens/background001.jpg');
-  background-size: 90vh;
-  background-repeat: no-repeat;
+}
+
+section#img002 {
+  background-image: url('imagens/background002.jpg');
+}
+
+section > p {
+  padding-bottom: 2em;
 }
 
 
@@ -80,7 +97,7 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-rodape);
   padding: 10px;
 }
 
